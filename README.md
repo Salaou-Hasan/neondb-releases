@@ -10,12 +10,12 @@ Pre-built binaries for NeonDB. Download with one command — no GitHub page need
 
 **PowerShell:**
 ```powershell
-Invoke-WebRequest -Uri "https://github.com/Salaou-Hasan/neondb-releases/raw/main/neondb-windows-x86_64.exe" -OutFile "neondb.exe"
+Invoke-WebRequest -Uri "https://github.com/Salaou-Hasan/neondb-releases/releases/latest/download/neondb-windows-x86_64.exe" -OutFile "neondb.exe"
 ```
 
 **curl:**
 ```bash
-curl -L -o neondb.exe https://github.com/Salaou-Hasan/neondb-releases/raw/main/neondb-windows-x86_64.exe
+curl -L -o neondb.exe https://github.com/Salaou-Hasan/neondb-releases/releases/latest/download/neondb-windows-x86_64.exe
 ```
 
 After downloading, move it somewhere on your PATH (e.g. `C:\Windows\System32\`) or run it from the project folder.
@@ -25,7 +25,7 @@ After downloading, move it somewhere on your PATH (e.g. `C:\Windows\System32\`) 
 ### Linux (x86_64)
 
 ```bash
-curl -L -o neondb https://github.com/Salaou-Hasan/neondb-releases/raw/main/neondb-linux-x86_64
+curl -L -o neondb https://github.com/Salaou-Hasan/neondb-releases/releases/latest/download/neondb-linux-x86_64
 chmod +x neondb
 sudo mv neondb /usr/local/bin/
 ```
@@ -35,7 +35,7 @@ sudo mv neondb /usr/local/bin/
 ### macOS (Apple Silicon / ARM64)
 
 ```bash
-curl -L -o neondb https://github.com/Salaou-Hasan/neondb-releases/raw/main/neondb-macos-arm64
+curl -L -o neondb https://github.com/Salaou-Hasan/neondb-releases/releases/latest/download/neondb-macos-arm64
 chmod +x neondb
 sudo mv neondb /usr/local/bin/
 ```
@@ -43,7 +43,7 @@ sudo mv neondb /usr/local/bin/
 ### macOS (Intel / x86_64)
 
 ```bash
-curl -L -o neondb https://github.com/Salaou-Hasan/neondb-releases/raw/main/neondb-macos-x86_64
+curl -L -o neondb https://github.com/Salaou-Hasan/neondb-releases/releases/latest/download/neondb-macos-x86_64
 chmod +x neondb
 sudo mv neondb /usr/local/bin/
 ```
