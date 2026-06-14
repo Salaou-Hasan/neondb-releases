@@ -1,37 +1,72 @@
-﻿# NeonDB Releases
+# NeonDB Binaries
 
-Pre-built binaries for [NeonDB](https://github.com/Salaou-Hasan/NeonDB) — a high-throughput self-hosted game backend.
+Pre-built binaries for NeonDB. Download with one command — no GitHub page needed.
+
+---
 
 ## Download
 
-| Binary | Description |
-|--------|-------------|
-| 
-eondb | Main CLI — 
-eon init, 
-eon start, 
-eon call, 
-eon update |
-| 
-eondb-sim | Load simulation / stress tester |
-| 
-eondb-bench | Criterion benchmarks |
-| 
-eondb-soak | Long-running soak test harness |
-
 ### Windows (x86_64)
-Download from [Releases](https://github.com/Salaou-Hasan/neondb-releases/releases).
 
-### Linux (x86_64) & macOS
-Coming soon — build from source or contribute a build via [Issues](https://github.com/Salaou-Hasan/neondb-releases/issues).
+**PowerShell:**
+```powershell
+Invoke-WebRequest -Uri "https://github.com/Salaou-Hasan/neondb-releases/raw/main/neondb-windows-x86_64.exe" -OutFile "neondb.exe"
+```
 
-## Auto-update
+**curl:**
+```bash
+curl -L -o neondb.exe https://github.com/Salaou-Hasan/neondb-releases/raw/main/neondb-windows-x86_64.exe
+```
 
-`powershell
-neon update          # install latest
-neon update --check  # check only
-`
+After downloading, move it somewhere on your PATH (e.g. `C:\Windows\System32\`) or run it from the project folder.
 
-## Source
+---
 
-Source code lives at [Salaou-Hasan/NeonDB](https://github.com/Salaou-Hasan/NeonDB).
+### Linux (x86_64)
+
+```bash
+curl -L -o neondb https://github.com/Salaou-Hasan/neondb-releases/raw/main/neondb-linux-x86_64
+chmod +x neondb
+sudo mv neondb /usr/local/bin/
+```
+
+---
+
+### macOS (Apple Silicon / ARM64)
+
+```bash
+curl -L -o neondb https://github.com/Salaou-Hasan/neondb-releases/raw/main/neondb-macos-arm64
+chmod +x neondb
+sudo mv neondb /usr/local/bin/
+```
+
+### macOS (Intel / x86_64)
+
+```bash
+curl -L -o neondb https://github.com/Salaou-Hasan/neondb-releases/raw/main/neondb-macos-x86_64
+chmod +x neondb
+sudo mv neondb /usr/local/bin/
+```
+
+---
+
+## Quick start after installing
+
+```bash
+neondb init        # scaffold a new project
+neondb start       # start the server
+neondb call <reducer> '[args]'
+```
+
+Source code: [github.com/Salaou-Hasan/NeonDB](https://github.com/Salaou-Hasan/NeonDB)
+
+---
+
+## Available binaries
+
+| File | Platform | Status |
+|---|---|---|
+| `neondb-windows-x86_64.exe` | Windows 10/11 x64 | ✅ Available |
+| `neondb-linux-x86_64` | Linux x64 (Ubuntu 20.04+) | 🔜 Coming soon |
+| `neondb-macos-arm64` | macOS Apple Silicon (M1/M2/M3) | 🔜 Coming soon |
+| `neondb-macos-x86_64` | macOS Intel | 🔜 Coming soon |
