@@ -1,72 +1,37 @@
-# NeonDB Binaries
+﻿# NeonDB Binaries
 
-Pre-built binaries for NeonDB. Download with one command — no GitHub page needed.
+Pre-built binaries committed directly to this repo — download with one command, no browser needed.
 
----
-
-## Download
+## Install
 
 ### Windows (x86_64)
 
-**PowerShell:**
-```powershell
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Salaou-Hasan/neondb-releases/main/neondb-windows-x86_64.exe" -OutFile "neondb.exe"
-```
+PowerShell:
 
-**curl:**
-```bash
-curl -L -o neondb.exe https://raw.githubusercontent.com/Salaou-Hasan/neondb-releases/main/neondb-windows-x86_64.exe
-```
+    Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Salaou-Hasan/neondb-releases/main/windows/neondb-windows-x86_64.exe" -OutFile "neondb.exe"
 
-After downloading, move it somewhere on your PATH (e.g. `C:\Windows\System32\`) or run it from the project folder.
+Move neondb.exe somewhere on your PATH (e.g. C:\Windows\System32\) or run it from your project folder.
 
----
+### Linux (x86_64) - coming soon
 
-### Linux (x86_64)
+    curl -L -o neondb https://raw.githubusercontent.com/Salaou-Hasan/neondb-releases/main/linux/neondb-linux-x86_64
+    chmod +x neondb && sudo mv neondb /usr/local/bin/
 
-```bash
-curl -L -o neondb https://raw.githubusercontent.com/Salaou-Hasan/neondb-releases/main/neondb-linux-x86_64
-chmod +x neondb
-sudo mv neondb /usr/local/bin/
-```
+### macOS (Apple Silicon) - coming soon
 
----
+    curl -L -o neondb https://raw.githubusercontent.com/Salaou-Hasan/neondb-releases/main/macos/neondb-macos-arm64
+    chmod +x neondb && sudo mv neondb /usr/local/bin/
 
-### macOS (Apple Silicon / ARM64)
+## Quick start
 
-```bash
-curl -L -o neondb https://raw.githubusercontent.com/Salaou-Hasan/neondb-releases/main/neondb-macos-arm64
-chmod +x neondb
-sudo mv neondb /usr/local/bin/
-```
+    neondb init
+    neondb start
+    neondb call <reducer> [args]
 
-### macOS (Intel / x86_64)
+Source code: https://github.com/Salaou-Hasan/NeonDB
 
-```bash
-curl -L -o neondb https://raw.githubusercontent.com/Salaou-Hasan/neondb-releases/main/neondb-macos-x86_64
-chmod +x neondb
-sudo mv neondb /usr/local/bin/
-```
+## Binaries in this repo
 
----
-
-## Quick start after installing
-
-```bash
-neondb init        # scaffold a new project
-neondb start       # start the server
-neondb call <reducer> '[args]'
-```
-
-Source code: [github.com/Salaou-Hasan/NeonDB](https://github.com/Salaou-Hasan/NeonDB)
-
----
-
-## Available binaries
-
-| File | Platform | Status |
-|---|---|---|
-| `neondb-windows-x86_64.exe` | Windows 10/11 x64 | ✅ Available |
-| `neondb-linux-x86_64` | Linux x64 (Ubuntu 20.04+) | 🔜 Coming soon |
-| `neondb-macos-arm64` | macOS Apple Silicon (M1/M2/M3) | 🔜 Coming soon |
-| `neondb-macos-x86_64` | macOS Intel | 🔜 Coming soon |
+    windows/neondb-windows-x86_64.exe  - Windows 10/11 x64       - Available
+    linux/neondb-linux-x86_64          - Linux x64                - Coming soon
+    macos/neondb-macos-arm64           - macOS Apple Silicon      - Coming soon
