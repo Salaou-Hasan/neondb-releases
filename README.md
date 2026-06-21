@@ -1,34 +1,8 @@
-# NeonDB Releases
+# NeonDB has moved to Voltra
 
-Download the latest binary from the [Releases page](https://github.com/Salaou-Hasan/neondb-releases/releases/latest).
+This project was renamed. **NeonDB is now Voltra.**
 
----
+- New binaries: https://github.com/Salaou-Hasan/voltra-releases
+- Source: https://github.com/Salaou-Hasan/voltra
 
-## Install — Windows (x86_64)
-
-Run both lines in PowerShell (the first forces TLS 1.2, required by GitHub):
-
-```powershell
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-Invoke-WebRequest -Uri "https://github.com/Salaou-Hasan/neondb-releases/releases/latest/download/neondb-windows-x86_64.exe" -OutFile "neondb.exe"
-```
-
-Then move `neondb.exe` somewhere on your PATH (e.g. `C:\Windows\System32\`) or run it from your project folder.
-
----
-
-## Install — Linux / macOS
-
-Coming soon.
-
----
-
-## Quick start
-
-```
-neondb init
-neondb start
-neondb update
-```
-
-Source code: https://github.com/Salaou-Hasan/NeonDB
+This repo is kept as an archive and is no longer updated.
